@@ -9,15 +9,15 @@
 
 # How to use
 **Step 1 : Install node js.**
-  cd Frontend
-  npm install
-  npm run dev
+  cd Frontend<br>
+  npm install<br>
+  npm run dev<br>
 
 **Step 2 : Config server.**
-> Go to > Backend > src > main > resources > application.properties
+> Go to > Backend > src > main > resources > application.properties<br>
 _cd Backend/src/main/resources/application.properties_
 
 **Step 3 : Run server.**
-  > Go to > Backend
-  using .\mvnw.cmd spring:run
+  > Go to > Backend<br>
+  using .\mvnw.cmd spring:run<br>
   click : http://localhost:3000/orders
