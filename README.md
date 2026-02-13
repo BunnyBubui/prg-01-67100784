@@ -24,13 +24,13 @@
 
 # How to use
 **Step 1 : Install node js.**
-  > cd Frontend and npm install
+  > cd Frontend
+  > npm install
   > npm run dev
 
 **Step 2 : Config server.**
   > Go to > Backend > src > main > resources > application.properties
- 
-  _> cd Backend/src/main/resources/application.properties_
+  _cd Backend/src/main/resources/application.properties_
 
 **Step 3 : Run server.**
   > Go to > Backend
