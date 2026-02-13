@@ -13,11 +13,11 @@
   npm install<br>
   npm run dev
 
-**Step 2 : Config server.**
+**Step 2 : Config server.** <br>
   Go to > Backend > src > main > resources > application.properties<br>
   _cd Backend/src/main/resources/application.properties_
 
-**Step 3 : Run server.**
+**Step 3 : Run server.** <br>
   Go to > Backend<br>
   using .\mvnw.cmd spring:run<br>
   click : http://localhost:3000/orders
