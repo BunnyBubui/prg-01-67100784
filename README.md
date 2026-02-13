@@ -14,8 +14,8 @@
   npm run dev
 
 **Step 2 : Config server.**
-  > Go to > Backend > src > main > resources > application.properties
-  _cd Backend/src/main/resources/application.properties_
+> Go to > Backend > src > main > resources > application.properties
+_cd Backend/src/main/resources/application.properties_
 
 **Step 3 : Run server.**
   > Go to > Backend
