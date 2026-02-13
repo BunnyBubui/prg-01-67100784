@@ -1,0 +1,392 @@
+.dashboard-wrapper {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f6f9fc, #eef2f7);
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.searchbar input {
+  position: relative;
+}
+
+.searchbar input:focus + span {
+  opacity: 0;
+}
+
+.searchbar span {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  color: rgb(213, 213, 213);
+  padding: 0px 10px;
+  margin: auto;
+  user-select: none;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.dashboard-header h2 {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dashboard-header button {
+  background: linear-gradient(90deg, #2b7cff, #4a90ff);
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.dashboard-header button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(43, 124, 255, 0.3);
+}
+
+.order-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 20px;
+}
+
+.order-card {
+  background: white;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.order-card .detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.order-card h3 {
+  margin-bottom: 10px;
+  color: #2b7cff;
+  font-weight: 600;
+}
+
+.order-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.total-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #27ae60;
+  margin-top: 8px;
+}
+
+.card-actions {
+  margin-top: 15px;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.card-actions :is(.single, .multi) button {
+  flex: 1;
+  padding: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+.card-actions .single {
+  display: flex;
+}
+
+.card-actions .multi {
+  display: flex;
+}
+
+.btn-edit {
+  background: #27ae60;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #1f8f4a;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  color: white;
+}
+
+.list-button {
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.btn-delete:hover {
+  background: #c0392b;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+  z-index: 1000;
+  padding: 20px 10px;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 420px;
+  max-height: 640px;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: slideUp 0.3s ease;
+}
+
+.modal-content h3 {
+  margin-bottom: 10px;
+}
+
+.modal-content input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.modal-content input:focus {
+  outline: none;
+  border-color: #2b7cff;
+  box-shadow: 0 0 0 3px rgba(43, 124, 255, 0.15);
+}
+
+.modal-content button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.error-text {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.modal-content input.error {
+  border: 1px solid #e74c3c;
+  background: #fff5f5;
+}
+
+.modal-actions button {
+  transition: all 0.3s;
+}
+
+.modal-actions button:first-child {
+  background: #2b7cff;
+  color: white;
+}
+
+.modal-actions button:first-child:hover {
+  background: #2067d8;
+  color: white;
+}
+
+.modal-actions button:last-child {
+  background: #bbb;
+  color: white;
+}
+
+.modal-actions button:last-child:hover {
+  background: #9f9f9f;
+  color: white;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list h3 {
+  padding-top: 5px;
+}
+
+.list-add {
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-view {
+  background: #2b7cff;
+  color: white;
+}
+
+.btn-view:hover {
+  background: #1e5ed9;
+}
+
+.view-modal {
+  max-width: 500px;
+}
+
+.detail-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.detail-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fb;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.detail-list li div p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.detail-total {
+  margin-top: 15px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.2s ease;
+  width: 220px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2b7cff;
+  box-shadow: 0 0 0 3px rgba(43, 124, 255, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .order-card {
+    padding: 15px;
+  }
+
+  .order-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}

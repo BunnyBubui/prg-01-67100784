@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  /* === Brand / Election === */
+  --green-main: #1f7a63;        /* หัวข้อ / Branding */
+  --green-accent: #2fbf9c;     /* ปุ่มหลัก */
+  --green-dark: #24a587;       /* Hover / Active */
+
+  /* === Background === */
+  --bg-gradient-start: #67b2a2; /* ไล่สีพื้นหลัง */
+  --bg-gradient-end: #ffffff;  /* ปลายไล่สี */
+  --card-bg: #ffffff;          /* พื้นการ์ด */
+
+  /* === Border & Shadow === */
+  --border-soft: #cce5df;      
+  --shadow-main: rgba(31, 122, 99, 0.15);
+
+  /* === Text === */
+  --text-subtitle: #5a8f84;
+  --text-muted: #eb7c7c;
+  --danger: rgb(255, 43, 43);
+  --danger-light: rgb(255, 227, 227);
+
+  --nav-bg: rgb(84, 176, 140);
+}
+
+* {
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes modalFadeIn {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes modalFadeOut {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes modalFadeDown {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes modalFadeUp {
+    0% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+@keyframes scale-up {
+    0% {
+        scale: 0.95;
+        opacity: 0;
+    }
+
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+

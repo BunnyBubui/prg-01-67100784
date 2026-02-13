@@ -1,0 +1,82 @@
+/* Container ของปุ่ม */
+.toggle-hidden-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* ระยะห่างระหว่างข้อความกับปุ่ม */
+    background: #ffffff; /* สีพื้นหลังจางๆ ให้ดูเป็นกลุ่มก้อน */
+    padding: 4px 12px 4px 16px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+    height: 40px; 
+    margin-left: auto; 
+}
+
+.toggle-hidden-wrapper:hover {
+    background: #f9fafe;
+}
+
+/* ข้อความกำกับ (ปกติ / รายการที่ซ่อน) */
+.toggle-text {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap; /* ห้ามตัดบรรทัด */
+    user-select: none;
+}
+
+/* --- สร้างตัว Switch --- */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    margin-left: 5px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* สีตอนเปิด (Checked) - สีแดง */
+input:checked + .slider {
+    background-color: #ff5c5c;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #ff5c5c;
+}
+
+/* เลื่อนปุ่มวงกลม */
+input:checked + .slider:before {
+    transform: translateX(18px);
+}

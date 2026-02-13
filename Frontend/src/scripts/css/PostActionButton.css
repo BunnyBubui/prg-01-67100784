@@ -1,0 +1,53 @@
+.post-action-container {
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 12px;
+    z-index: 300;
+}
+
+/* ปุ่มพื้นฐาน */
+.post-action-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    transition: all .3s ease;
+}
+
+/* ปุ่มหลัก */
+.main-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* ปุ่มรอง (ปิดเริ่มต้น) */
+.child-btn {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+
+/* ปุ่มรอง เวลาเปิด */
+.child-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Hover */
+.post-action-btn:hover {
+    transform: scale(1.12);
+}
+
+.post-action-btn:active {
+    transform: scale(0.92);
+}
