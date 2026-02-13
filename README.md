@@ -8,9 +8,9 @@
 - VScode or more IDE
 
 # Folders Project
-> rg-01-67100784
-  > Frontend
-    > public
+-> rg-01-67100784
+  -> Frontend
+    -> public
     > src
   > Backend
     > .mvn
