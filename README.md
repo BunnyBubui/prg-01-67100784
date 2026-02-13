@@ -7,21 +7,6 @@
 - Java
 - VScode or more IDE
 
-# Folders Project
--> rg-01-67100784
-  -> Frontend
-    -> public
-    > src
-  > Backend
-    > .mvn
-    > src
-      > main
-        > java
-        > resources
-          - application.properties
-    > target
-    
-
 # How to use
 **Step 1 : Install node js.**
   cd Frontend
