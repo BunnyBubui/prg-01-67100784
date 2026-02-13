@@ -24,9 +24,9 @@
 
 # How to use
 **Step 1 : Install node js.**
-  > cd Frontend
-  > npm install
-  > npm run dev
+  cd Frontend
+  npm install
+  npm run dev
 
 **Step 2 : Config server.**
   > Go to > Backend > src > main > resources > application.properties
@@ -34,5 +34,5 @@
 
 **Step 3 : Run server.**
   > Go to > Backend
-  > using .\mvnw.cmd spring:run
-  > click http://localhost:3000/orders
+  using .\mvnw.cmd spring:run
+  click : http://localhost:3000/orders
