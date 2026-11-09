@@ -21,3 +21,7 @@
   Go to > Backend<br>
   using .\mvnw.cmd spring:run<br>
   click : http://localhost:3000/orders
+
+## Portfolio review
+
+See [portfolio notes](docs/PORTFOLIO.md) for scope, attribution and local configuration.
